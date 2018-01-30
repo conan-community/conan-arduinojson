@@ -10,6 +10,7 @@ class ArduinojsonConan(ConanFile):
     url = "https://github.com/bblanchon/ArduinoJson"
     description = "C++ JSON library for IoT. Simple and efficient."
     no_copy_source = True
+    exports_sources = ["LICENSE"]
 
     def source(self):
         source_url = ("%s/archive/v%s.zip" % (self.url, self.version))
@@ -17,5 +18,6 @@ class ArduinojsonConan(ConanFile):
         os.rename("ArduinoJson-%s" % self.version, "sources")
 
     def package(self):
+        self.copy("*LICENSE*", dst="licenses", src="sources")
         self.copy("*.h", dst="include", src="sources")
         self.copy("*.hpp", dst="include", src="sources")
