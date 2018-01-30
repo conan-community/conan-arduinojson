@@ -14,7 +14,7 @@ The packages generated with this *conanfile.py* can be found in [Bintray](https:
 
     $ conan install arduinojson/5.13.0@conan/stable
 
-### Project setup
+## Project setup
 
 If you handle multiple dependencies in your project is better to add a *conanfile.txt*:
 
