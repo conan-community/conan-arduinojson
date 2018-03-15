@@ -3,8 +3,7 @@
 ![conan-arduinojson image](/images/conan-arduinojson.png)
 
 [![Download](https://api.bintray.com/packages/conan-community/conan/arduinojson%3Aconan/images/download.svg?version=5.13.0%3Astable)](https://bintray.com/conan-community/conan/arduinojson%3Aconan/5.13.0%3Astable/link)
-[![Build Status](https://travis-ci.org/danimtb/conan-arduinojson.svg?branch=stable%2F5.13.0)](https://travis-ci.org/danimtb/conan-arduinojson)
-[![Build status](https://ci.appveyor.com/api/projects/status/jyeh443gn0l0f3bi/branch/stable/5.13.0?svg=true)](https://ci.appveyor.com/project/danimtb/conan-arduinojson/branch/stable/5.13.0)
+[![Build Status](https://travis-ci.org/conan-community/conan-arduinojson.svg?branch=stable%2F5.13.0)](https://travis-ci.org/conan-community/conan-arduinojson)
 
 [Conan.io](https://conan.io) package for [ArduinoJson](https://github.com/bblanchon/ArduinoJson) project.
 
