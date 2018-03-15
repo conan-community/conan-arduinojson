@@ -1,4 +1,4 @@
-from conans import ConanFile, CMake, tools
+from conans import ConanFile, tools
 import os
 
 
@@ -6,14 +6,14 @@ class ArduinojsonConan(ConanFile):
     name = "arduinojson"
     version = "5.13.0"
     license = "The MIT License (MIT)"
-    homepage = "https://arduinojson.org"
-    url = "https://github.com/bblanchon/ArduinoJson"
     description = "C++ JSON library for IoT. Simple and efficient."
+    homepage = "https://github.com/bblanchon/ArduinoJson"
+    url = "https://github.com/conan-community/conan-arduinojson"
     no_copy_source = True
     exports_sources = ["LICENSE"]
 
     def source(self):
-        source_url = ("%s/archive/v%s.zip" % (self.url, self.version))
+        source_url = ("%s/archive/v%s.zip" % (self.homepage, self.version))
         tools.get(source_url)
         os.rename("ArduinoJson-%s" % self.version, "sources")
 
